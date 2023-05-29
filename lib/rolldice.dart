@@ -28,12 +28,15 @@ class _DiceRollerState extends State<DiceRoller> {
   @override
   Widget build(context) {
     return Column(mainAxisSize: MainAxisSize.min, children: [
-      const Text(
-        'Clique em "Rodar o Dado" para rodar o dado!',
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 30,
-          backgroundColor: Colors.black,
+      const Padding(
+        padding: EdgeInsets.only(bottom: 50, left: 30, right: 30),
+        child: Text(
+          'Clique em "Rodar o Dado" para jogar!',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 30,
+          ),
         ),
       ),
       Image.asset(
